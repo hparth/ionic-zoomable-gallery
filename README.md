@@ -2,6 +2,7 @@
 
 This plugin provides light weight ionic gallery with zooming, caption, swipe features.
 
+# Prerequisites 
 - Ionic - v1.1.0
 - angular-translate - v2.9.0
 
