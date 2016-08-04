@@ -1,0 +1,21 @@
+<ion-view> 
+	<ion-content class="imageGalleryContent">
+		<div class="imageSlider">
+			<ion-slide-box ng-init="initSlideBox()" does-continue="{{ options.isContinue }}" delegate-handle="slider">
+				<ion-slide class="ionSlide"  ng-repeat="imageData in imagesData" ng-if="imagesData.length > 0" > 
+		          	<div class="container" class="scrollCanvas">
+		            	<ion-scroll class="scrollCanvas" zooming="{{ options.isZoomable }}" min-zoom="1" direction="xy" locked="false">
+		                	<div class="image" style="background-image: url( {{imageData.url}} )"></div>  
+		              	</ion-scroll>
+		             </div>
+		             <div class="buttonHandler">
+		             	<i class="arrowButton prev" ng-if = "options.showNavigationArrow == true" ng-click = "previousSlide()" ng-class="{true: 'hideArrow', false: ''}[options.isContinue != true]"></i>
+		             	<i class="arrowButton next" ng-if = "options.showNavigationArrow == true" ng-click = "nextSlide()" ng-class="{true: 'hideArrow', false: ''}[options.isContinue != true]"></i>
+		             	<i class="caption" ng-if = "options.showCaption == true">{{ imageData.caption }}</i>
+		             	<div class="strip" ng-if = "options.showStrip == true"></div>
+		             </div>
+		      	</ion-slide>
+			</ion-slide-box>
+		</div>
+	</ion-content>
+</ion-view>
