@@ -31,10 +31,10 @@ angular.module('zoomableImageGallery', ['ionic']);
 Data source example :
 ```
  $scope.imagesData = [{
-      url : 	"images/plan/Bitmap1.png",
+      url : 	"1.png",
       caption : "THis is caption 1"
     },{
-      url : 	"images/plan/Bitmap2.png",
+      url : 	"2.png",
       caption : "THis is caption 2"
   }];
 ```
