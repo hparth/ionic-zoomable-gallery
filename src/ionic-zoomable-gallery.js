@@ -6,7 +6,7 @@
 		
 		var customOptions = {};
 		if(!angular.isUndefined($stateParams)){
-			customOptions = $stateParams.data;
+			customOptions = $stateParams.data; //Pass the stateParams while navigating to this module
 		}
 		var _options = {
 			imagesData : new Array(),
