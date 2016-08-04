@@ -2,10 +2,8 @@
 
 This plugin provides light weight ionic gallery with zooming, caption, swipe features.
 
-
-Ionic - v1.1.0
-
-angular-translate - v2.9.0
+- Ionic - v1.1.0
+- angular-translate - v2.9.0
 
 
 # Features
@@ -20,10 +18,12 @@ angular-translate - v2.9.0
 
 Load script and css on the html
 
-<link href="src/ion-gallery.css" rel="stylesheet">
+```
+<link href="src/ionic-zoomable-gallery.css" rel="stylesheet">
 ...
-<script src="src/ion-gallery.min.js"></script>
+<script src="src/ionic-zoomable-gallery.js"></script>
 
+```
 Add zoomableImageGallery as dependency to your project
 ```
 angular.module('zoomableImageGallery', ['ionic']);
@@ -49,15 +49,15 @@ Caption - This property is optional. Blank value, absence of caption, set showCa
 Default configuration for this plugin.
 ```
 var _options =  {
-			imagesData : new Array(),
-			allowSwipe : false,
-			showCaption : true,
-			isZoomable : true,
-			isContinue : true,
-			showStrip : true,
-			showNavigationArrow : true,
-			startIndex : 1
-  };
+	imagesData : new Array(),
+	allowSwipe : false,
+	showCaption : true,
+	isZoomable : true,
+	isContinue : true,
+	showStrip : true,
+	showNavigationArrow : true,
+	startIndex : 1
+};
 ```
 Default values : 
 
